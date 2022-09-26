@@ -1,2 +1,8 @@
 const userInfo = require('./information');
-console.log(`Hello, Im ${userInfo.name} from ${userInfo.campus}`);
+var cowsay = require("cowsay");
+console.log(cowsay.say({
+    text : `Hello, Im ${userInfo.name} from ${userInfo.campus}`,
+    e : "oO",
+    T : "U "
+}));
+
